@@ -12,7 +12,11 @@ See [Vite Configuration Reference](https://vitejs.dev/config/).
 
 ## Project Setup
 
-- Command to create the Vue.js project: npm create vue@latest
+### Command to create the Vue.js project
+
+```sh
+npm create vue@latest
+```
 
 ```sh
 npm install
