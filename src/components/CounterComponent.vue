@@ -12,6 +12,7 @@ export default {
   data() {
     return {
       count: 0,
+      users: Array,
     };
   },
   methods: {
@@ -23,6 +24,29 @@ export default {
         this.count--;
       }
     },
+  },
+
+  created() {
+    console.log("Created life cycle!");
+    const fetchUser = async () => {
+      const data = await fetch("https://dummyjson.com/users");
+      const json = await data.json();
+      this.users = json.users;
+      console.log(this.users);
+    };
+    fetchUser();
+  },
+
+  mounted() {
+    console.log("Mounted!");
+  },
+
+  updated() {
+    console.log("Updated life cycle!", this.count);
+  },
+
+  unmounted() {
+    console.log("Unmounted!");
   },
 };
 </script>
