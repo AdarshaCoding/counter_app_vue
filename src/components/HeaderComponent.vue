@@ -40,4 +40,8 @@ export default {
   font-weight: bold;
   text-decoration: none;
 }
+
+.nav-bar > li a {
+  text-decoration: none;
+}
 </style>
