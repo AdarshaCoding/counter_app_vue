@@ -1,5 +1,5 @@
 <template>
-  <h1>Home Component!</h1>
+  <h1>Home - default root component</h1>
 </template>
 
 <script>

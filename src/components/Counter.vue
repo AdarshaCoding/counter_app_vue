@@ -1,5 +1,5 @@
 <template>
-  <h4 class="counter-info">{{ count }}</h4>
+  <h1 class="counter-info">{{ count }}</h1>
   <div class="inc-dec-btn">
     <button v-on:click="increment">Increment</button>
     <button @click="decrement">Decrement</button>
@@ -56,7 +56,8 @@ button {
   margin: 5px;
   background-color: black;
   color: white;
-  font-weight: bolder;
+  font-weight: bold;
+  font-size: large;
   cursor: pointer;
 }
 .counter-info,

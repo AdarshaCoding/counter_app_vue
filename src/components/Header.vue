@@ -13,7 +13,7 @@ import About from "./About.vue";
 import Home from "./Home.vue";
 
 export default {
-  name: "HeaderComponent",
+  name: "Header",
   components: {
     Home,
     About,
