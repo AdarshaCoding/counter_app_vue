@@ -31,15 +31,15 @@ export default {
   },
 
   mounted() {
-    console.log("Mounted!");
+    console.log("Counter: Mounted!");
   },
 
   updated() {
-    console.log("Updated life cycle!", this.count);
+    console.log("Counter: Updated life cycle!", this.count);
   },
 
   unmounted() {
-    console.log("Unmounted!");
+    console.log("Counter: Unmounted!");
   },
 };
 </script>

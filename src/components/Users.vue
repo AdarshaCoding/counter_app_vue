@@ -32,9 +32,17 @@ export default {
       this.userImage = picture.large;
     },
   },
-
+  created() {
+    console.log("Users: created!");
+  },
   updated() {
-    console.log("New Profile updated!", this.firstName + " " + this.lastName);
+    console.log("Users updated!", this.firstName + " " + this.lastName);
+  },
+  mounted() {
+    console.log("Users: Mounted");
+  },
+  unmounted() {
+    console.log("Users: Unmounted");
   },
 };
 </script>
