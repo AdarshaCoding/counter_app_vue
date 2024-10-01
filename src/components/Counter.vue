@@ -27,14 +27,7 @@ export default {
   },
 
   created() {
-    console.log("Created life cycle!");
-    const fetchUser = async () => {
-      const data = await fetch("https://dummyjson.com/users");
-      const json = await data.json();
-      this.users = json.users;
-      console.log(this.users);
-    };
-    fetchUser();
+    console.log("Counter: Created life cycle!");
   },
 
   mounted() {

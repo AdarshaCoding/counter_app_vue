@@ -1,12 +1,18 @@
 <template>
   <h2>User Details</h2>
   <div><img :src="userImage" :alt="`${firstName} ${lastName}`" /></div>
-  <button @click="fetchUser">Get User</button>
+  <button
+    :style="{ cursor: 'pointer', padding: '10px 20px', fontSize: 'large' }"
+    @click="fetchUser"
+  >
+    Get User
+  </button>
+  <router-view />
 </template>
 
 <script>
 export default {
-  name: "UserInfo",
+  name: "Users",
   data() {
     return {
       firstName: "",

@@ -1,20 +1,19 @@
 <template>
   <Header />
-  <router-view></router-view>
+  <router-view />
   <Counter />
-  <UserInfo />
 </template>
 
 <script>
 import Header from "./components/Header.vue";
 import Counter from "./components/Counter.vue";
-import UserInfo from "./components/UserInfo.vue";
+import User from "./components/Users.vue";
 export default {
   name: "App",
   components: {
     Header,
     Counter,
-    UserInfo,
+    User,
   },
 };
 </script>

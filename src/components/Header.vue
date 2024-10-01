@@ -2,8 +2,9 @@
   <div class="app-header">
     <h3 :style="{ cursor: 'pointer' }">Counter App</h3>
     <ul class="nav-bar">
-      <li><router-link to="/"> Home</router-link></li>
+      <li><router-link to="/users"> Users</router-link></li>
       <li><router-link to="/about"> About</router-link></li>
+      <li><router-link to="/"> Home</router-link></li>
     </ul>
   </div>
 </template>
@@ -11,12 +12,14 @@
 <script>
 import About from "./About.vue";
 import Home from "./Home.vue";
+import Users from "./Users.vue";
 
 export default {
   name: "Header",
   components: {
     Home,
     About,
+    Users,
   },
 };
 </script>
